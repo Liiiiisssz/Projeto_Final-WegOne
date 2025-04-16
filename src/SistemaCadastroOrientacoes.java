@@ -10,7 +10,8 @@ public class SistemaCadastroOrientacoes {
 
 		Scanner leia = new Scanner(System.in);
 		
-		int decisao;
+		int decisaoInicial;
+		int tipoOrientacao;
 		
 		System.out.println("-- Bem vindo(a) ao Sistema de --");
 		System.out.println("--Cadastro de Orientações WEG!--");
@@ -26,18 +27,18 @@ public class SistemaCadastroOrientacoes {
 		System.out.println("  |-------------------------|");
 		System.out.println("  |4.  Excluir Orientação   |");
 		System.out.println("  |-------------------------|");
-		System.out.println("  |5.  encerrar programa    |");
+		System.out.println("  |5.  ENCERRAR PROGRAMA    |");
 		System.out.println("  |_________________________|");
 		
 		System.out.println(" ");
 
 		System.out.println("  --O que deseja realizar?-- ");
 		System.out.print("  --Resposta: ");
-		decisao = leia.nextInt();
+		decisaoInicial = leia.nextInt();
 		
 		System.out.println(" ");
 		
-		switch(decisao) {
+		switch(decisaoInicial) {
 		
 		case 1:
 			System.out.println("-- Cadastrar Orientação --");
@@ -46,16 +47,53 @@ public class SistemaCadastroOrientacoes {
 			System.out.println("3. Manutenção e Reparos");
 			System.out.println("4. Testes e Diagnóstico");
 			System.out.println("5. Manual de Conduta e Operações Setoriais");
-			System.out.println("Escolha o tipo de orientação: ");
+			System.out.print("Escolha o tipo de orientação a ser cadastrado: ");
+			tipoOrientacao = leia.nextInt();
+
+			switch(tipoOrientacao){
+
+				case 1:
+					
+					break;
+
+				case 2: 
+
+					break;
+
+				case 3:
+					
+					break;
+
+				case 4:
+
+					break;
+
+				case 5:
+
+					break;
+
+				default:
+					break;
+
+			}
+
 			break;
 		
 		case 2:
+			System.out.println("-- Pesquisar Orientação --");
+			System.out.println("1. Título");
+			System.out.println("2. Código");
+			System.out.print("Insira o tipo de pesquisa: ");
 			break;
 			
 		case 3:
+			System.out.println("-- Editar Orientação --");
+
 			break;
 			
 		case 4:
+			System.out.println("-- Excluir Orientação --");
+
 			break;
 		}
 	
